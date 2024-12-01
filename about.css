@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #EAF9F4; /* Light Aqua background */
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #48B4AF; /* Aqua header */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .logo {
+    width: 110px;
+    height: auto;
+  }
+  
+  .header-text {
+    text-align: center;
+    margin-left: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  .motto {
+    font-style: italic;
+    margin: 0;
+  }
+  
+  .navbar {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin: 0 1rem;
+  }
+  
+  /* Navbar Button Styles */
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;  /* Adds padding to the buttons */
+    border: 2px solid #3F9D93;  /* Green border around buttons */
+    border-radius: 10px;  /* Rounded corners for the buttons */
+    margin: 0 10px;  /* Adds margin between buttons */
+    text-align: center;  /* Ensures text is centered inside the button */
+  }
+  
+  .navbar a:hover {
+    color: #fff;  /* Changes text color on hover */
+    background-color: #3F9D93;  /* Darkens background color on hover */
+    transition: 0.5s;  /* Smooth transition effect for hover */
+  }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Misquito - Keep Bugs Away</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/1e5034451a.js" crossorigin="anonymous"></script>
+  <script>
+    // Language toggle functionality
+    function toggleLanguage(lang) {
+      const elements = document.querySelectorAll('[data-en], [data-cz]');
+      elements.forEach(el => {
+        if (lang === 'cz') {
+          el.innerText = el.getAttribute('data-cz');
+        } else {
+          el.innerText = el.getAttribute('data-en');
+        }
+      });
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <a href="index.html">
+        <img src="images/Logo.png" alt="Misquito Logo" class="logo">
+      </a>
+      <div class="header-text">
+        <h1>Misquito</h1>
+        <p class="motto" data-en="Keep Bugs Away, Enjoy Your Day!" data-cz="Keep Bugs Away, Enjoy Your Day!">Keep Bugs Away, Enjoy Your Day!</p>
+      </div>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html" data-en="Home" data-cz="Domov">Domov</a></li>
+        <li><a href="about.html" data-cz="O nás" data-en="About">O nás</a></li>
+        <li><a href="contact.html" data-cz="Kontaktujte nás" data-en="Contact">Kontaktujte nás</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+
+  
+  <div class="language-toggle">
+    <button onclick="toggleLanguage('en')">English</button>
+    <button onclick="toggleLanguage('cz')">Czech</button>
+  </div>
+
+  <main>
+    <section class="product-info">
+      <h2 data-en="Welcome to Misquito!" data-cz="Vítejte v Misquito!">Vítejte v Misquito!</h2>
+      <p data-en="Welcome to Misquito, the innovative solution for keeping mosquitoes away! Our specially crafted spray combines natural and effective ingredients, ensuring a safe and pleasant outdoor experience." 
+         data-cz="Vítejte v Misquito, inovativním řešení pro odhánění komárů! Náš speciálně vyrobený sprej kombinuje přírodní a účinné složky, které zajišťují bezpečný a příjemný zážitek venku.">
+         Vítejte v Misquito, inovativním řešení pro odhánění komárů! Náš speciálně vyrobený sprej kombinuje přírodní a účinné složky, které zajišťují bezpečný a příjemný zážitek venku.
+      </p>
+    </section>
+
+    <section class="about-product">
+      <h2 data-en="About Our Product" data-cz="O našem produktu">O našem produktu</h2>
+      <p data-en="Misquito is a mosquito-repellent spray developed as part of a school project. Proudly made in the Czech Republic, the product uses Alpa and cloves to deliver a powerful yet gentle effect."
+         data-cz="Misquito je sprej odpuzující komáry vyvinutý jako součást školního projektu. Produkt, který se hrdě vyrábí v České republice, využívá Alpu a hřebíček k dosažení silného, ale jemného účinku.">
+         Misquito je sprej odpuzující komáry vyvinutý jako součást školního projektu. Produkt, který se hrdě vyrábí v České republice, využívá Alpu a hřebíček k dosažení silného, ale jemného účinku.
+      </p>
+    </section>
+
+    <section class="buy-now">
+      <h2 data-en="Get Misquito Today!" data-cz="Získejte Misquito dnes!">Získejte Misquito dnes!</h2>
+      <img src="images/Produkt.png" alt="Misquito Spray" class="product-image">
+      <option value=""></option>
+     <a href="cart.html"><button  class="buy-button" data-en="Buy Now" data-cz="Koupit nyní">Koupit nyní</button></a> 
+    </section>
+  </main>
+  
+
+  <footer>
+    <p>&copy; 2024 Misquito. <span data-en="All rights reserved." data-cz="Všechna práva vyhrazena.">All rights reserved.</span></p>
+    <a href="">
+        <img src="images/tiktok.png" class="footer-img" >
+    </a>
+
+    <a href="">
+        <img src="images/Instagram.png" class="footer-img">
+    </a>
+    
+    
+  </footer>
+</body>
+</html>
